@@ -162,3 +162,52 @@ img {
     color: var(--black);
     background-color: var(--orange);
 }
+
+.hero {
+    padding: 251px 0;
+    background-color: var(--orange);
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-position: right 20% bottom;
+}
+
+.hero__title {
+    margin: 0;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 100%;
+    color: var(--black);
+}
+
+.hero__descr {
+    max-width: 590px;
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000;
+}
+
+.hero__btns {
+    display: flex;
+    gap: 8px;
+}
+
+.hero__btn {
+    border-radius: 6px;
+    padding: 20px 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 133%;
+}
+
+.hero__btn--black {
+    color: var(--light);
+    background-color: var(--black);
+}
+
+.hero__btn--light {
+    color: var(--black);
+    background-color: var(--light);
+}
