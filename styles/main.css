@@ -211,3 +211,48 @@ img {
     color: var(--black);
     background-color: var(--light);
 }
+
+.benefits {
+    padding: 80px 0;
+}
+
+.benefits__list {
+    display: flex;
+    gap: 50px;
+}
+
+.benefits__item {
+    display: flex;
+    align-items: center;
+}
+
+.benefits__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 24px;
+    padding: 26px;
+    background-color: #FDE7DA;
+
+    img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.benefits__subtitle {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--black);
+}
+
+.benefits__descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+}
