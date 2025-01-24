@@ -107,6 +107,14 @@ img {
     list-style: none;
 }
 
+.title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    color: var(--black);
+}
+
 .header {
     padding: 16px 0;
     background-color: var(--black);
@@ -310,4 +318,35 @@ img {
 
 .slider__nav-item--active {
     background-color: var(--light);
+}
+
+.portfolio {
+    padding: 100px 0;
+}
+
+.portfolio__title {
+    margin-bottom: 25px;
+}
+
+.portfolio__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+.portfolio__item {
+    grid-column: 4 span;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.portfolio__img-wrapper {
+    padding: 40px 40px 0;
+    background-color: var(--black);
+}
+
+.portfolio__subtitle {
+    margin: 0;
+    padding: 24px 32px 24px;
 }
