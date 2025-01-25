@@ -359,3 +359,54 @@ img {
     line-height: 140%;
     color: var(--black);
 }
+
+.footer {
+    padding: 70px 0;
+    background-color: var(--black);
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 70px;
+}
+
+.footer__nav-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer__nav-link {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--light);
+}
+
+.footer__btn {
+    border-radius: 6px;
+    margin-bottom: 70px;
+    padding: 12px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--black);
+    background-color: var(--light);
+}
+
+.socials {
+    display: flex;
+    gap: 8px;
+}
+
+.socials__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
