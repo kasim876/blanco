@@ -172,11 +172,14 @@ img {
 }
 
 .hero {
-    padding: 251px 0;
     background-color: var(--orange);
+}
+
+.hero__container {
+    padding: 251px 0;
     background-image: url('../img/bg.png');
     background-repeat: no-repeat;
-    background-position: right 20% bottom;
+    background-position: right 15px bottom;
 }
 
 .hero__title {
