@@ -1,0 +1,127 @@
+@media (max-width: 1024px) {
+    .header__email {
+        display: none;
+    }
+
+    .hero__container {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        background-image: none;
+    }
+
+    .benefits__item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .benefits__icon {
+        padding: 15px;
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero__title {
+        font-size: 60px;
+    }
+
+    .benefits__list {
+        flex-direction: column;
+    }
+
+    .benefits__icon {
+        padding: 9px;
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .messages {
+        padding: 50px 0;
+    }
+
+    .slider__message {
+        font-size: 30px;
+    }
+
+    .portfolio__item {
+        grid-column: 6 span;
+    }
+
+    .footer__row {
+        flex-direction: column;
+        justify-content: initial;
+        gap: 25px;
+    }
+
+    .footer__row:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .footer__nav-list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .hero__title {
+        margin-bottom: 16px;
+        font-size: 48px;
+    }
+
+    .hero__btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .hero__btn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .messages {
+        padding: 30px 0;
+    }
+
+    .slider__message {
+        font-size: 20px;
+    }
+
+    .slider__author-name {
+        font-size: 16px;
+    }
+
+    .slider__author-position {
+        font-size: 14px;
+    }
+
+    .portfolio__item {
+        grid-column: 12 span;
+    }
+}
