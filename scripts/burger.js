@@ -6,11 +6,11 @@
     const menuActiveClass = 'nav--active';
     const lockScrollClass = 'stop-scroll';
 
-    function toggleMobileMenu() {
+    function toggleNavMenu() {
         menu.classList.toggle(menuActiveClass);
         burger.classList.toggle(burgerActiveClass);
         document.body.classList.toggle(lockScrollClass);
     }
     
-    burger.addEventListener('click', toggleMobileMenu);
+    burger.addEventListener('click', toggleNavMenu);
 })()
