@@ -3,7 +3,7 @@
     const menu = document.getElementById('menu');
 
     const burgerActiveClass = 'burger--active';
-    const menuActiveClass = 'nav--active';
+    const menuActiveClass = 'header__nav--active';
     const lockScrollClass = 'stop-scroll';
 
     function toggleNavMenu() {
