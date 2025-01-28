@@ -26,8 +26,39 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        padding: 12px 0;
+    }
+
+    .header__logo {
+        width: 80px;
+        height: 26px;
+    }
+
     .header__nav {
-        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 100;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+        padding: 15px;
+        width: 80%;
+        height: calc(100% - 50px);
+        background-color: var(--black);
+        transform: translateX(-100%);
+        visibility: hidden;
+        transition: transform 0.25s ease-in-out, visibility 0.25s ease-in-out;
+    }
+
+    .header__nav--active {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .header__nav-email {
+        display: block;
     }
 
     .burger {
