@@ -89,15 +89,32 @@
                 <h2 class="visually-hidden">Our team messages</h2>
                 <div class="slider">
                     <div class="slider__content">
-                        <blockquote class="slider__message">“Join a community of industry leading professionals.“</blockquote>
-                        <div class="slider__author">
-                            <p class="slider__author-name">Laura Paula</p>
-                            <p class="slider__author-position">Director @Company</p>
+                        <div class="slider__item slider__item--active">
+                            <blockquote class="slider__message">“Join a community of industry leading professionals.“</blockquote>
+                            <div class="slider__author">
+                                <p class="slider__author-name">Laura Paula</p>
+                                <p class="slider__author-position">Director @Company</p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <blockquote class="slider__message">“Join a community of industry leading professionals. Join a community of industry leading professionals.“</blockquote>
+                            <div class="slider__author">
+                                <p class="slider__author-name">Maxim Lukashenko</p>
+                                <p class="slider__author-position">Senior Developer</p>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <blockquote class="slider__message">“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolorum voluptate, soluta iure! Culpa, maiores.“</blockquote>
+                            <div class="slider__author">
+                                <p class="slider__author-name">Paula Laura</p>
+                                <p class="slider__author-position">SEO @Company</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="slider__nav">
-                        <button class="btn-reset slider__nav-item slider__nav-item--active"></button>
-                        <button class="btn-reset slider__nav-item"></button>
+                    <div class="slider__pagination pagination">
+                        <button class="btn-reset pagination__item pagination__item--active" data-slide="0"></button>
+                        <button class="btn-reset pagination__item" data-slide="1"></button>
+                        <button class="btn-reset pagination__item" data-slide="2"></button>
                     </div>
                 </div>
             </div>
@@ -200,5 +217,6 @@
     </footer>
 
     <script src="./scripts/burger.js"></script>
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>
