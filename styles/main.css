@@ -315,6 +315,7 @@ img {
 }
 
 .slider {
+    position: relative;
     max-width: 610px;
     width: 100%;
     margin: 0 auto;
@@ -327,11 +328,15 @@ img {
 }
 
 .slider__item {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.25s ease-in-out, opacity 0.25s ease-in-out;
 }
 
 .slider__item--active {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .slider__message {
