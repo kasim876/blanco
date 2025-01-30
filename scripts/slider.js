@@ -11,10 +11,17 @@
         slides[activeIndex].classList.remove(slideActiveClass);
         paginationButtons[activeIndex].classList.remove(paginationButtonActiveClass);
 
-        activeIndex = event.target.getAttribute('data-slide');
+        const newIndex = Number(event.target.getAttribute('data-slide'));
+    
+        if (newIndex >= 0 && newIndex < slides.length) {
+            activeIndex = newIndex;
+        } else {
+            console.error('Invalid slide index:', newIndex);
+            return;
+        }
 
         slides[activeIndex].classList.add(slideActiveClass);
-        paginationButtons[activeIndex].classList.add(paginationButtonActiveClass);   
+        paginationButtons[activeIndex].classList.add(paginationButtonActiveClass);
     }
 
     paginationButtons.forEach(btn => btn.addEventListener('click', changeSlide));
